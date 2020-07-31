@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bbd4def2-865c-4291-8588-0373cecf555e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aERBkdZPI6w1qs5SmiEIwLrVU1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="admin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="paquete1.admin" />
+      <module name="POO7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="paquete1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.admin" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbd4def2-865c-4291-8588-0373cecf555e" name="Default Changelist" comment="" />
+      <created>1586298632255</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586298632255</updated>
+      <workItem from="1586298635359" duration="1474000" />
+      <workItem from="1586304812086" duration="71000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="722" y="75" key="#Project_Structure" timestamp="1586298647783">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="75" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1586298647783" />
+    <state x="758" y="155" key="FileChooserDialogImpl" timestamp="1586304893005">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="758" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586304893005" />
+    <state width="724" height="210" key="GridCell.Tab.0.bottom" timestamp="1586300112214">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586300112214" />
+    <state width="724" height="210" key="GridCell.Tab.0.center" timestamp="1586300112213">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586300112213" />
+    <state width="724" height="210" key="GridCell.Tab.0.left" timestamp="1586300112213">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586300112213" />
+    <state width="724" height="210" key="GridCell.Tab.0.right" timestamp="1586300112214">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586300112214" />
+    <state x="418" y="34" key="new project wizard" timestamp="1586304894361">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="418" y="34" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586304894361" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/paquete1/admin.java</url>
+          <line>5</line>
+          <properties class="paquete1.admin" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

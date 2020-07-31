@@ -1,0 +1,54 @@
+private String nombre;
+private double sueldo;
+private Date altaContrato;
+
+Declaramos una variable de tipo Date es como String 
+Un tipo double y int son datos primitivos 
+nombre es objetos de la clase String
+
+class Empleado {
+    public Empleado(String nom, double sue, int agno , int mes , int dia){
+        nombre=nom;
+        this.agno=agno;
+    GregoriaCalendar calendario = new GregorianCalendar(agno, mes-1 , dia);
+    //cuando usamos nes llamamos el constructor de la clase
+
+    altaContrato=calendario.getTime();
+
+    }
+
+La herencia es construir una clase que hereda de otra la herencia puede herrar de otra hereda todas la propiedades de la clase padre 
+Object 
+    calendar
+        GregorianCalendar
+Es decir gregorianClandar tines los metoods y atributos de la clase clandar y object        
+
+
+public String getNombre (){
+    return nombre 
+}
+public double getSueldo(){
+    return sueldo;
+}
+public Date  getFecha(){
+    return altaContrato;
+}
+
+public void subeSuledo(double porcentaje){
+    double aumento= suledo*porcentaje/100;
+    sueldo+=aumento;
+}
+
+
+
+private int mes;
+private int agno;
+private String nombre; ;
+private double sueldo;
+}
+
+Empleado  [] misEmpleados = new Empleado[3]:
+misEmpleados[0] = new Empleado("chuz" , 85000, 1900 ,12,17);
+
+
+

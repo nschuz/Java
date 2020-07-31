@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="331656fb-8306-4fd4-8737-39a3126b5225" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1a3rHqhac26QhowM4hs2NIUDnlo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="admin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="escom.admin" />
+      <module name="Arreglos4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="escom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.admin" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="331656fb-8306-4fd4-8737-39a3126b5225" name="Default Changelist" comment="" />
+      <created>1585975033465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585975033465</updated>
+      <workItem from="1586023679635" duration="340000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="758" y="155" key="FileChooserDialogImpl" timestamp="1586024036063">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="758" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586024036063" />
+    <state x="849" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1586023938812">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="849" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586023938812" />
+    <state x="418" y="34" key="new project wizard" timestamp="1586024038755">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="418" y="34" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586024038755" />
+  </component>
+</project>

@@ -1,0 +1,520 @@
+//API JAVA ES UNA BIBLOTECA DONDE VIENE TODAS LA CLASES DE JAVA
+Existen clas propias o definidas
+Definidas son las clases mas utilizadas String , Math , Array Thread
+La clase Math , Math.sqrt(), Math.pow(), Math.sin() , Math.roun()
+
+//Refundicion convetimos un double a entero
+int resultado = (int) Math.round(num); lo que hacemos es un casteo
+int resultado = (int) Math.round(num);
+int rsultado2 = (int) Math.pow(num,2);
+
+Constantes en Java:
+Una constante es una variable del sistema que mantiene un valor inmutable a lo largo de toda la vida del programa. Las constantes en Java se definen mediante el modificador final.
+La estructura sería:
+static final nombreConstante = valor;
+
+
+//Clase String
+String no es un tipo primirtivo donde el nombre la la variable es un objeto (intsaci de la clase String)
+Los metodas mas utilizados
+.lenght(), .charAt() , .subestring(x,y) , equals(cadena).
+
+Arreglo JAVA
+es una estructura de datos del mismo tipo
+
+Array Unideimensionales
+TipoVaribale []  NombreDelArray = new TipoVaribale [Dimesio];
+Ejemplo:
+int [] edad = new int [4];
+long [] edad = new long [4];
+
+// Para Asignar Memoria
+int [] numeros = new int [3];
+numeros[0]=5;
+numeros[1]=7;
+// Otro metodo
+int[] nuemros = {5,7,9};
+
+//Matirces
+  int matriz [][]= {{1,2,3},{4,5,6},{7,8,9}};
+  System.out.println("Inserta datos matriz1: ");
+        for (int i = 0; i <matriz1.length; i++) {
+            for (int j = 0; j <matriz1[i].length ; j++) {
+                matriz1[i][j]=sc.nextInt();
+            }
+        }
+
+
+  //POO
+  *VENTAJAS: programas divididos , partes (clases) modularizacio
+  *Muy reutilizable Herencia
+  *Si existe un fallo el programa continua funcionando
+  *Encapsulamiento
+  Todas las clases  funcionan uniendose y se le llama Modularizacion
+
+  Una clase es un modelo donde se redacta las carcatreicas comunes de un objeto
+  los objetos son los objetos o ejempleraes que se constuyen de esa clase
+  cada objeto tienen una identidad propia
+
+  Nombre paquetes permiten organizar el codigo no usar mayusculas
+
+  Accediendo a propiedades y  compartimiento
+  Objeto.propedad="valor";
+  Objeto.metodo();
+
+  Objeto:
+  Tiene propiedades (Atributos)
+  Tiene Comportamientos (que es capaz de hace)
+
+
+  1.Definimos las propiedades
+  int rueda, int motor , int llanta;
+
+  2.Definimos un Metodo Cosntructor  es un metodo que se encarga en dar un metodo
+  inicial a nuestor objeto
+  public Coche(){
+    rueda=4;
+    motor=4;
+    llanta=4;
+  }
+
+  3.Creamos un objeto (instaciar una clase)
+  Coche nombreObjeto = new Coche(); //obmbreObjeto es un ejemplar de clase
+
+  *ENCAPSULACION
+   la funcionalidad de unmodulo se haga solo desde la propia clase
+   ejemplo si yo modifico las propiedades en otra clase on el main;
+   renault.rueda=3; //Estoy violando los datos hay una violacion de datos
+
+   para evitar eso debemos agrgar el modificar private  ejemplo
+   private  int rueda;  private int moto;
+   Pero al hacer esto ya no puede ser visible  en otra clase
+
+    Como sabe las propiedades cuando son privadas porque si quemremos saber las propiedas estan encapsuladas ES AQUI DONDE USAMOS GETTERS Y SETTTER
+
+    Metodos de Acceso 
+    Setter Definidores
+    Getter Captadores
+
+    Construimos nuestro getter
+    public  String get_largo (){
+        return  "El largo es: "+largo;    
+    }
+    //Ahora ya podemos usarlos en nutro objeto instaciado 
+    objeto.get_largo();
+
+    Construimos nuestro setter 
+
+    public void set_color (){
+        color ="azul";
+    }
+    public String get_color(){
+        return "Color es: "+color;
+    }
+
+
+//Paso de parametros 
+    public void set_color (String color){
+        this.color =  color;
+    }
+    objeto.set_color("azul");
+
+Nunca se deber hacer los siguiente :
+objeto.color="rosa"; //violacion de edatos solo s epueden manipular en el canal adecuado
+
+*Usamos la plabra final para definir una constantes 
+private final String nombre;
+
+Campo static 
+cuando creamos un objeto se le asigana una copia de los atributos es decir recibe una copia de las variables o atributos como el  de nombre , seecion , id 
+
+Para que java asigne el nombre dinamicamente es que solo exista una copia y que cada objeto compratan la variable id osea solo hay una copia y es compartida por ltodos los objetos creados. va perteneecr a la clase no a los obejtos creados 
+
+Mteodos static 
+El método estático en Java es un método que pertenece a la clase y no al objeto. Un método estático solo puede acceder a datos estáticos.
+
+NombredelaClae.NombreMetodo();
+Todo programam java corre un metodo un main 
+Nota un metodo estatico no puede acceder a los atributos solo a los atributos staticos
+
+En Resuemen.
+1.No actuan sobre objetos
+2.No acceden a compos de ejemplar (variables / cosntantes declaradas en la clase, a menos que estas tambien sean static )
+3.Pra llamarlos nombre_clase.nombre_metodo
+
+*Sobre Carga de Cosntructores 
+Una misma clase puede tener varios contructore con el mismo nombre pero tiene que tener difrentes numeros de parametros 
+
+public Empleado (String nombre, double sueldo){
+
+}
+public Empleado (String nombre){
+
+}
+al ahora de crera el objeto lo unico que pasa es qeu creamos un estado diferente para ese objeto 
+
+si yo quiero llenar los ddatos  como defaul usaria this y lo que hace aqui es this es que llama al otro constructor al  que no estoy usando y le pasa los parametos correspodientes
+public Empleado(String nom){
+    this(500, 20,50); // lama el otro costurctor y le da los parametros 
+}
+
+
+//Podemos cerar una clase sin constructores que no tiene sentido y se le llama cosntructor por defecto no ldamos un estado inicla por defecto.
+
+Igualemnte existe la sobre carga de metodos.
+
+
+
+Herencia 
+reurlizar el codigo de una clase evitando dolores de cabeza hereda atributso y metodos 
+
+
+//java no permite la herencia multiplees decir que furgoneta heredda de dos o mas clases eso no es posible 
+
+public class Furgoneta extends Coche{
+    //super clase es coche
+    //subclase es Furgoneta  
+    private int capacidad_extra ;
+    private int plazas_extra;
+
+//constructor 
+    public Furgoneta (int plazas_extra, int capacidad_extra){
+        //llama el cosntructrode la clase padrecone le objetivo de darle un estado inical
+        super();
+        this.capacidad_extra=capacidad_extra;
+        this.plazas_extra=plazas_extra;
+    } 
+    //metodod getter
+    public String getDatosFurgoneta(){
+        return "La capacidad de carga es"+capacidad_extra;
+    }
+
+}
+//Diseño de una herencia 
+"ES UN"  una forgoneta es un coche? y como tal el diseño esta mal  
+             (hija)           (papa)
+
+el diseño seria lo siguiente 
+Vehiculo (padre)
+Hijos : COche , Furgoneta , Camion , Moto
+
+
+video Sigueinte diseñando la herencia 
+un jefe es un empleado ? SI
+un empleado es un jefe ? NO
+
+class Jefatura extends Empleado {
+    ublic Jefatura(String nombre , double sueldo , int año , int mes , int dia){
+        //cosntructor d la clas epadre
+        super(nombre , sueldo, agno m mes mdia)
+    }
+
+    public void establecerIncentivo(double b){
+        incetivo=b;
+    }
+    //sobrescribirmos /machacamos el metodo dame sueldo porque no me sirve porque era detinado a la clase Empleado
+    //heredamos un metood y lo nombramos igual osea invalida ese metodo solo para esa clase 
+
+    public double dameSUledo(){
+        double sueldoJefe;
+        sueldoJefe=super.dameSUledo();//una retro llamamda esta mal por eso usamos super osea que llame ese metodo de la clase padre
+        return sueldoJefe +incetivo;
+    }
+
+
+}
+private double incetivo;
+
+
+Polimorfismo (diferente comportamiento del contexto)
+Princiopi de sustitucion: se puede utilizar un objeto de la subclase simpre que el programa espere un objeto de la superclase 
+
+Jefatura jefe_RRHH = new Jefatura("Juan" , 5550 , 20006 , 9 ,25);
+jefe__RRHH.establecerIncentivo(500);
+
+misEmpleado[3]= new Empleado("Antoni" , 4700 , 2009, 11,9);
+misEmpleado[4]=jefe__RRHH;//Polimorfimos en accion. Principio de sustitucion
+//para verlo mas claro podemos guardar objetos de la subclase
+misEmpleado[5] = new Jefatura("Maria" , 9500 , 1999 , 5 ,26);
+
+como es caap que el for sepa cque metodo usar uno de la lcase padre o de la clse hijo esn este caso se llama enlazado dinamico
+
+
+* Casting de objetos. Clases y métodos final. Vídeo 44 *
+Refundicion es  igual casting 
+Para poder aplicar el metodo de mi clase padre
+
+misEmpleado[5] = new Jefatura("Maria" , 9500 , 1999 , 5 ,26);
+Jefatura  jefaFinanazas = (Jefatura) misEmpleaods[5];
+
+Ahora ya le puedo aplicar un metodo el metodo establcer incentivo
+
+*Clases final
+Clase padre = Clase empleado 
+Clase hijo = Clase  Jefe
+Clase hijo(de jefe)= Clase Director
+
+si le pongo final class a la clase jefatura detengo la hrencia ya bo puede otras clases heredar de esta
+
+class Director extends Jefatura{
+    public Director(nombre , double , suledo , int agno , int mes , int dia){
+        super(nombre, sueldo, agno , mes , dia);
+    }
+}
+
+si un metodo lo sobrescirbimos y  le ponemos al metodo padre final ya no lo puedo sobrescribir 
+
+Clases Abstractas I. Vídeo 45
+en una jeraqia de clases la ultima clase de la jerarquia es la clase mas capaz mas potentes ya que tiene mas metodos 
+
+public abstract String getDescripcio();
+la poner un metodo abstracto debemos darle a la clase una bastracta 
+
+object es la clase padre de todo todas clas clases de java y las nuestras heredean de Object
+
+
+
+
+/////////////////////////77
+ 
+un objeto tiene
+Atributos (Caracteriticas del objeto)
+Metodos (Acciones)
+
+Una clase es un conjuto de objetos con caracteristicas similares
+Ejemplo la clase Coche
+tiene Atributos: Color , marca, km
+tiene Metodos: encendert (=) , acelerar (), frenar ()
+
+Objetos de mi clase Coche
+Coche 1 -> color : balnco , Marca: Audi , Km:0
+coche 2 -> color: ROjo , Marca: Ferrrari , KM: 100
+Una clase puede tener muchos obejtos o infinitos objetos
+
+La clase de prefrencia se escribe en Singular
+public es un modificador de acceso
+
+public class Coche {  // creamos una clase
+
+}
+
+// creamos un obejto
+Coche coche1 = new Coche();
+Nombre de la clase:  coche
+Nombre del Objeto : coche1
+La palabra reservada new que sirve para crear obejetos
+POnemos el constructor Coche();
+
+Un paquete es un conjunto de clases
+
+
+public class ClasesyObjetos {
+
+//Atributos
+        String color;
+        String nombre;
+        int km;
+        // Metodo
+        public static void main(String[] args) {
+            ClasesyObjetos objeto1 = new ClasesyObjetos();
+            objeto1.color="rojo";
+            objeto1.nombre="ferrarri";
+            objeto1.km=0;
+            System.out.println("El color: "+objeto1.color);
+            System.out.println("La marca del coche 1 es: "+objeto1.nombre);
+            System.out.println("Km: "+objeto1.km);
+        }
+}
+
+METODOS
+un emetodo es una accion o comportamiento de los objetos
+public void metodo (){
+
+}
+public modificador de acceso
+void valor de retorno int floar bolloenat y estc
+nombre el metodo
+dentro de paranetesis los arguementos
+
+Metodos Parametros y Argumentos
+Parametro es una declracion de paremtro o declaracion de objeto  o variable
+argumento es un valor que se envia
+
+// declaracion del metodo
+public void metodo (int a , String b){ //Parametro
+
+}
+
+miauto.acelerar(1, "parametro"); // invocacion de Metodo //Argumento
+
+Mtodo retorno de valores
+public int sumar (int a, int b ){
+int suma = a+b;
+return suma;
+}
+
+
+public String saludar (String nombre ){
+String saludo ="HOLA" + nombre;
+return saludo;
+}
+
+// Metodo Constructor
+Es un metodo especila de una clase que se invoca siempre qeus ecrea un objeto de esa clase
+Cuando se crea un objeto  ocurren 3 cosas:
+Se asignan Memoria para el objeto
+Se inixializan los atributos de ese objeto
+Se invoca al constructor de la clase que puede ser uno entre varios
+
+Persona p1 = new Persona(); -> Persona(); el metdo constructor
+sirve para facilitar los atributos
+
+Caracateristicas de los constructores:
+Tienen el mimso nombre de la clase
+No devuelven ningun valor
+Debe declarrase como publico
+
+//Atributos
+   String nombre;
+   int edad;
+
+   //Metodo Construvtor no se pone void
+   public Persona (String nombre , int edad){
+       nombre= this.nombre;
+       edad = this.edad; // el this es edad dentro  del aPraametro
+   }
+
+
+   /// Sobre Carga de Mtodos y constructores
+   public Persona (String nombre , int edad){
+        this.nombre= nombre;
+        this.edad = edad; // el this es edad es el del atributos
+    }
+    public Persona(String dni){
+        this.DNI=dni;
+    }
+
+
+tododo se difenecia en  el tipo y canditadad de parametros que tiene , pero si afceta
+cuando cambia  si pongo void en vez de int si  muestra error
+
+
+   // ENcapsulamiento y metodos accesores
+   // un atrbituos publico puede ser accedico dentro del mismo paquete
+     // private solo puede se accedido desde metodos desde la la misma clase
+     // encapsulamiento oculatar datos para que no todos puedad modificar  y que solo se puedan acceder
+     // dor metodos de la misma clase
+
+     //los metodos accesores son los metodos setter y getter
+
+   //Etablelcer la edad
+   public void SetEdad(int edad){
+   this.edad=edad;
+   }
+   //metodo getter
+   public int getEdad(){
+       return edad;
+   }
+
+   /// Constantes en java
+   private final  String nombre; solo lo puedo asignar el valoren el constructor pero
+   si intentamos con setter y hetter no podremos ya que una constante no puede cambiar
+
+
+
+   //Miembrso estaticos de una clase
+   Cada objeto saca la copia de los atributos qque no son estaticos o miembros de clase
+   private static String frase ="Primera clase";
+   al ser static ya no le pertenece a los objetos le pertenece a los objetos
+    cada uno de los objetos hace una copia distinta de todo;
+
+    private static  String frase ="Priemra frase";
+
+ public static void main(String[] args) {
+     Estatico obj1 = new Estatico();
+     Estatico obj2 = new Estatico();
+
+     obj2.frase="Segunda frase";
+     System.out.println(obj1.frase);
+     System.out.println(obj2.frase);
+ }
+
+ en este caso los dos imprimeme segunda frase el ultimo cambio que hago en un objeto
+ se asigna o se cambian para  todos los objetos
+
+Ya no es necesario instaciar un objeto podemos usar el nombre de la clase
+System.out.println(Estatico.frase);
+
+Igualmnete existen los metodos estaticos
+
+Hreencia
+es una forma de reutilizacionde softawre  en la se crea un anueva clase al absorber los miembros ya exitente
+reutilizamos codigo de otras
+Se crea una nueva clase al absoerber los miembros de una clase ya existente
+
+CLASE PADRE O CSUPER CLASE
+CLASE HIJA O SUB CLASE LA CLASE QUE HEREDA
+
+Para sabe que clase usmo la pabla "Es un"
+Un estudiante es una persona corecto
+un estudiante es una persona (no siempre)
+
+
+
+
+CLASES Y METODOS FINAL
+Final es una tributo dejarlo contsnate pero ahora lo poedemos ver con clases y metodos
+para determinar que una de nuestras clases ya no tenga mas hijos osea que si l e pongo clase no puede tener hijo
+porque un clase hiha puede tener otra hija y de esa hija otra hia y asi..
+
+Ahora para los metodos final es que un metodo no puede hereddar a su clase hija solo sirve para el metodo lo demas si funcionara
+final public class FiguraCerrada extends Figura {
+public final void dibujar (){
+}
+
+Sobre escritura de metodos
+
+no es lo mismo sobre crga de metodos
+sobrecraga d metodos es cuando tengo dos a oma smetodos con el mismo nombre pero lo que lo difrencia el valor de atributo o parametro
+recordamos que marca error por el return
+
+tododo se difenecia en  el tipo y canditadad de parametros que tiene , pero si afceta
+cuando cambia  si pongo void en vez de int si  muestra error
+
+esto es cuando tengo metodos con el mismo nombre y esta clase es heredada
+
+@Override
+    public void  comer (){
+        System.out.println("Estoy comiendo con cubiertos ");
+    }
+
+
+//Clases y metodos abstarctos
+Clase abstracta :
+. se utiliza como super clase tiene que se clase padre
+* No se puede instaciar objetos
+* Sirve para proporcionar una super clase apropiada a partir de la cual heredan otras clase
+un metodo abtracto es cuando no esta bien definido
+ejemplo el mtodo comer de serviboo este metodo es generico porque todos los animales
+osea no se como implmentarlo pero si necesito ponerlo
+
+una clase abstracta a traves de esa clas eno puedo instaciar objetos porque es general entonces necesit to ser
+mas especifi
+
+public abstract class SerVivo {
+    public  abstract  void alimntarse ();
+}
+
+
+Polimorfismo es un concepto bastante importante
+Es uan relacion de tipo herencia , un objeto de la super clase  puede almacenar un objeto de cualquier de sus subclase
+Esto significa que la clase padre o superClase es compatible con los
+tipos de derivan de ella . pero no al reves
+
+osea que poedemos instacirlo con cualquiera de su clase hijas
+
+
+// conversion ascendente de tipos o upcastiong
+yo podria convertir un objeto d euna clase hija a un objeto de la clase padre
+
+// la conversion desendente de tipos downcasting

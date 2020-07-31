@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="RGB_With_Swimg:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RGB_With_Swimg_jar</output-path>
+    <root id="archive" name="RGB_With_Swimg.jar">
+      <element id="module-output" name="RGB_With_Swimg" />
+    </root>
+  </artifact>
+</component>
