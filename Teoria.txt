@@ -518,3 +518,6 @@ osea que poedemos instacirlo con cualquiera de su clase hijas
 yo podria convertir un objeto d euna clase hija a un objeto de la clase padre
 
 // la conversion desendente de tipos downcasting
+to do pasar teoria a ntotion
+
+
