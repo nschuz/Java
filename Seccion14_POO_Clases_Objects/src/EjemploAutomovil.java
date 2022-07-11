@@ -8,10 +8,10 @@ public class EjemploAutomovil {
         auto.cilindrada=2.0;
         auto.color="Balnco";
 
-        System.out.println("auto.fabricante: "+auto.fabricante);
-        System.out.println("auto.modelo: "+auto.modelo);
-        System.out.println("auto.color: "+auto.color);
-        System.out.println("auto.cilindrada: "+auto.cilindrada);
+        String respuesta =auto.detalle();
+        System.out.println(respuesta);
+        System.out.println(auto.acelerar(300));
+        System.out.println(auto.frenar());
 
 
     }

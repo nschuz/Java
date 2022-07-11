@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dce703d-b86c-42ad-8df6-44c521ef4c01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Seccion14_POO_Clases_Objects/src/PrimeraClase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Archivos/Archivos.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Browse Paths Channels Bookmarks Handling Exceptions in Java 11/src/Exception01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Browse Paths Channels Bookmarks Handling Exceptions in Java 11/src/TryFinally.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Browse Paths Channels Bookmarks Handling Exceptions in Java 11/src/democalculation.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programming with Dates and Times in Java/src/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seccion14_POO_Clases_Objects/src/Automovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Seccion14_POO_Clases_Objects/src/Automovil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Seccion14_POO_Clases_Objects/src/EjemploAutomovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Seccion14_POO_Clases_Objects/src/EjemploAutomovil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/hp/Desktop/Java/POO1"
+    "last_opened_file_path": "/home/hp/Desktop/Java/POO2"
   }
 }]]></component>
   <component name="RunManager">
@@ -84,6 +86,7 @@
       <updated>1586125882439</updated>
       <workItem from="1586125886084" duration="1138000" />
       <workItem from="1657164486784" duration="112000" />
+      <workItem from="1657324161101" duration="31000" />
     </task>
     <servers />
   </component>
