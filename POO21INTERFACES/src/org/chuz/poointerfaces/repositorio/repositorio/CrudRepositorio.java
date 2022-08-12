@@ -1,4 +1,4 @@
-package org.chuz.poointerfaces.repositorio;
+package org.chuz.poointerfaces.repositorio.repositorio;
 
 import org.chuz.poointerfaces.repositorio.modelo.Cliente;
 

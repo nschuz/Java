@@ -2,9 +2,7 @@ package org.chuz.sets;
 
 import modelo.Alumno;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class EjemploLIstSetComparable {
 
@@ -23,31 +21,23 @@ public class EjemploLIstSetComparable {
         //como impelntamso equal y hascode ya no poedemo tener distintos
         sa.add(new Alumno("Pedro2",7));
 
-        System.out.println(sa);
+        //en las listas se ordenan como van entrando
+        //si llamos este se aplica el ordenamiento que esta en la claseALumno (CompareTo)
+        //pero pdemos utilziar un compartor
+        //Collections.sort(sa);
 
-        System.out.println("Iterando utilziando foreach");
-        for(Alumno a: sa){
-            System.out.println(a.getNombre());
-        }
+        //sa.sort((a,b)-> a.compareTo(b));
 
-        System.out.println("Iterando utiliando while y iterator");
-        Iterator<Alumno> it = sa.iterator();
+        //otra froma en java 8 Aluno el tipo y porque ordenamos
+        sa.sort(Comparator.comparing((Alumno a)-> a.getNota()).reversed());
 
-        while(it.hasNext()){
-            Alumno  a = it.next();
-            System.out.println(a.getNombre());
-        }
+
+        //si quiero sobreescribir ese compartimeot necesito comparaot
+
 
         System.out.println("Utilizando expresiones Strea lambda con fearEach: ");
         sa.forEach(a-> System.out.println(a.getNombre()));
 
-        //el set no se peude utilziar con un for clasico
-        System.out.println("Utilziando un array classico");
-        for (int i =0 ; i<sa.size(); i++){
-
-            Alumno a = sa.get(i);
-            System.out.println(a.getNombre());
-        }
 
     }
 }

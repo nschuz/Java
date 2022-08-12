@@ -12,15 +12,19 @@ public class HashSetBuscarDuplicado2 {
         };
 
         Set<String> unicos = new HashSet<>();
+        Set<String> duplicados = new HashSet<>();
 
 
         for (String pez: peces){
             if (!unicos.add(pez)){
                 System.out.println("Elemnto duplicado : "+pez);
+                duplicados.add(pez);
             }
         }
 
+        unicos.removeAll(duplicados);
         System.out.println(unicos.size()+ "  "+ unicos);
+        System.out.println(duplicados);
 
     }
 }
